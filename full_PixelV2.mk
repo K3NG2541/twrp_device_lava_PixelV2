@@ -5,6 +5,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 PRODUCT_DEVICE := PixelV2
 PRODUCT_NAME := full_PixelV2
 PRODUCT_BRAND := lava
-PRODUCT_MODEL := PixelV2
+PRODUCT_MODEL := Lava PixelV2
 PRODUCT_MANUFACTURER := Lava
 

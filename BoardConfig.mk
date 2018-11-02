@@ -44,10 +44,6 @@ endif
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lava PixelV2,PixelV2,PV2
 
-#Hack for PixelV2
-$(shell mkdir -p $(OUT)/recovery/root)
-$(shell touch $(OUT)/recovery/root)
-
 TARGET_BOARD_PLATFORM := mt6735m
 
 # Bootloader
@@ -91,6 +87,6 @@ TW_REBOOT_BOOTLOADER := true
 TW_REBOOT_RECOVERY := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_EXCLUDE_SUPERSU := true
-TW_USE_TOOLBOX := true
+#TW_USE_TOOLBOX := true
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
